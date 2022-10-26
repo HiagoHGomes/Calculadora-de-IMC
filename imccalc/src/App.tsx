@@ -1,3 +1,4 @@
+import Swal from 'sweetalert2'
 import Styles from './App.module.css'
 import poweredImage from './assets/powered.png'
 import { useState } from 'react'
@@ -10,7 +11,12 @@ const App = () => {
     if(heightField && weightField) {
       console.log(heightField + weightField)
     }else {
-      alert(`Digite todos os campos corretamente (Não Inserir letras ou caracteres especiais).`)
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Digite todos os campos corretamente (Não Inserir letras ou caracteres especiais).',
+       
+      })
     }
 
   }
