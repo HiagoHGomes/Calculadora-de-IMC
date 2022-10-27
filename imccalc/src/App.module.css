@@ -129,3 +129,49 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
+
+/*Responsividade:*/
+
+@media (max-width: 811px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .leftSide {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .rightSide {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .rightArrow {
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+
+    footer {
+        margin: 25px;
+    }
+}
+
+@media (max-width: 361px) {
+
+    /* .grid{
+        grid-template-columns: 1fr;
+    } */
+
+    .rightSide {
+        margin-left: -10px;
+    }
+}
