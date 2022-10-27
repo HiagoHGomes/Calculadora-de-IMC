@@ -49,6 +49,10 @@ body {
     margin-bottom: 20px;
 }
 
+.leftSide input:disabled {
+    opacity: .5;
+}
+
 .leftSide button {
     width: 100%;
     color: white;
@@ -59,14 +63,69 @@ body {
     padding: 15px 0;
     margin-top: 40px;
     cursor: pointer;
-    transition: all ease .3s;
+    transition: all ease .2s;
 }
 
 .leftSide button:hover {
     opacity: 0.8;
 }
 
+.leftSide button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
 
 .rightSide {
     margin-left: 40px;
+    display: flex;
+}
+
+.grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rightBig {
+    flex: 1;
+    display: flex;
+}
+
+.rightArrow {
+    position: absolute;
+    background-color: #227C9D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 145px;
+    transition: all ease .2s;
+}
+
+.rightArrow:hover {
+    background-color: #228b9d;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #6A7D8B;
+    margin: auto;
+}
+
+a:hover{
+    text-decoration: underline;
 }
